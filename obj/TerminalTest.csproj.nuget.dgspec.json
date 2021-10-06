@@ -1,24 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\megag\\source\\repos\\TerminalTest\\TerminalTest.csproj": {}
+    "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFTerminalTest\\TerminalTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\megag\\source\\repos\\TerminalTest\\TerminalTest.csproj": {
+    "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj",
+        "projectName": "WPFCommandPrompt",
+        "projectPath": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj"
+      },
+      "frameworks": {
+        "net40": {}
+      }
+    },
+    "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFTerminalTest\\TerminalTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\megag\\source\\repos\\TerminalTest\\TerminalTest.csproj",
+        "projectUniqueName": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFTerminalTest\\TerminalTest.csproj",
         "projectName": "TerminalTest",
-        "projectPath": "C:\\Users\\megag\\source\\repos\\TerminalTest\\TerminalTest.csproj",
-        "packagesPath": "C:\\Users\\megag\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\megag\\source\\repos\\TerminalTest\\obj\\",
+        "projectPath": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFTerminalTest\\TerminalTest.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFTerminalTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\megag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +44,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\megag\\source\\repos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj": {
-                "projectPath": "C:\\Users\\megag\\source\\repos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj"
+              "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj": {
+                "projectPath": "C:\\Users\\alexc\\OneDrive\\Desktop\\Kairos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj"
               }
             }
           }
@@ -69,16 +79,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\megag\\source\\repos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\megag\\source\\repos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj",
-        "projectName": "WPFCommandPrompt",
-        "projectPath": "C:\\Users\\megag\\source\\repos\\WPFCommandPrompt_src\\WPFCommandPrompt\\WPFCommandPrompt.csproj"
-      },
-      "frameworks": {
-        "net40": {}
       }
     }
   }

@@ -29,6 +29,35 @@ namespace TerminalTest
         List<string> strings = new List<string>() {"This shit's bussin", "wow very cool\nI wish I knew ho to do that.", "I hope\nthis method works the way I think it should", " \nleedle"};
         Random rand = new Random();
 
+        private string currConsoleString = "";
+        private string oldConsoleString = "";
+        string CurrConsoleString
+        {
+            get
+            {
+                return currConsoleString;
+            }
+            set
+            {
+                if ((currConsoleString + value).Contains("\u001b[2J"))
+                {
+                    currConsoleString = (currConsoleString + value).Split("\u001b[2J").Last();
+                    oldConsoleString = "";
+                }
+                else if((currConsoleString + value).Contains("\u001b[0;0H"))
+                {
+                    oldConsoleString = (currConsoleString + value).Substring(0, (currConsoleString + value).LastIndexOf("\u001b[0;0H"));
+                    currConsoleString = (currConsoleString + value).Split("\u001b[0;0H").Last();
+                }
+                else
+                {
+                    currConsoleString = (currConsoleString + value);
+                }
+                prompt.ClearConsole();
+                prompt.WriteLine(overlayString(currConsoleString, oldConsoleString));
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -47,25 +76,33 @@ namespace TerminalTest
             {
                 Dispatcher.BeginInvoke((Action)(async () =>
                 {
-                    for(int i = 0; i < 100; i++)
-                    {
-                        prompt.WriteLine("sheesh");
-                        await Task.Delay(10);
-                        prompt.ClearConsole();
-                        await Task.Delay(3);
-                    }
+                    
                 }));
             }
         }
 
-        private void Prompt_ReadLine(object sender, ConsoleReadLineEventArgs e)
+        private async void Prompt_ReadLine(object sender, ConsoleReadLineEventArgs e)
         {
             var string1 = strings.ElementAt(rand.Next(0, strings.Count));
             var string2 = strings.ElementAt(rand.Next(0, strings.Count));
 
-            prompt.WriteLine("string #1:\n"+string1+"\n");
-            prompt.WriteLine("string #2:\n" + string2 + "\n");
-            prompt.WriteLine("string #2 overlayed on top of string #1:\n" + overlayString(string2, string1) + "\n");
+            CurrConsoleString = "string #1:\n" + string1 + "\n";
+            CurrConsoleString = "string #2:\n" + string2 + "\n";
+            CurrConsoleString = "string #2 overlayed on top of string #1:\n" + overlayString(string2, string1) + "\n";
+            await Task.Delay(1000);
+            CurrConsoleString = "writing a cls command:";
+            await Task.Delay(1000);
+            CurrConsoleString = "\u001b[2J";
+            await Task.Delay(1000);
+            CurrConsoleString = "counting to ten:";
+            await Task.Delay(1000);
+            CurrConsoleString = "\u001b[2J";
+
+            for (int i = 0; i <= 10; i++)
+            {
+                CurrConsoleString = "\u001b[0;0HI can count to " + i;
+                await Task.Delay(1000);
+            }
         }
 
 
