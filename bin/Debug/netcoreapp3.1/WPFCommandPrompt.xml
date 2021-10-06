@@ -1,0 +1,1920 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WPFCommandPrompt</name>
+    </assembly>
+    <members>
+        <member name="T:WPFCommandPrompt.StyleTheme">
+            <summary>
+            Style Theme settings
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.StyleThemeIndexID">
+            <summary>
+            Gets or sets the style theme index ID.
+            </summary>
+            <value>
+            The style theme index ID.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.StyleThemeName">
+            <summary>
+            Gets or sets the name of the style theme.
+            </summary>
+            <value>
+            The name of the style theme.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptBackgroundColor">
+            <summary>
+            Gets or sets the color of the command background.
+            </summary>
+            <value>
+            The color of the command background.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptBorderColor">
+            <summary>
+            Gets or sets the color of the command prompt border.
+            </summary>
+            <value>
+            The color of the command prompt border.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptBorderThickness">
+            <summary>
+            Gets or sets the command prompt border thickness.
+            </summary>
+            <value>
+            The command prompt border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptTextColor">
+            <summary>
+            Gets or sets the color of the command prompt text.
+            </summary>
+            <value>
+            The color of the command prompt text.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptFont">
+            <summary>
+            Gets or sets the command PRMMPT font.
+            </summary>
+            <value>
+            The command PRMMPT font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptFontSize">
+            <summary>
+            Gets or sets the size of the command text font.
+            </summary>
+            <value>
+            The size of the command text font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.CommandPromptPadding">
+            <summary>
+            Gets or sets the command prompt padding.
+            </summary>
+            <value>
+            The command prompt padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaFont">
+            <summary>
+            Gets or sets the message area font.
+            </summary>
+            <value>
+            The message area font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaFontSize">
+            <summary>
+            Gets or sets the size of the message area font.
+            </summary>
+            <value>
+            The size of the message area font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaBackgroundColor">
+            <summary>
+            Gets or sets the color of the message area background.
+            </summary>
+            <value>
+            The color of the message area background.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaBorderColor">
+            <summary>
+            Gets or sets the color of the message area border.
+            </summary>
+            <value>
+            The color of the message area border.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaBorderThickness">
+            <summary>
+            Gets or sets the message area border thickness.
+            </summary>
+            <value>
+            The message area border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageAreaPadding">
+            <summary>
+            Gets or sets the message area padding.
+            </summary>
+            <value>
+            The message area padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessagePromptColor">
+            <summary>
+            Gets or sets the color of the message prompt.
+            </summary>
+            <value>
+            The color of the message prompt.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageTextColor">
+            <summary>
+            Gets or sets the color of the message text.
+            </summary>
+            <value>
+            The color of the message text.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.MessageTextParagraphMargin">
+            <summary>
+            Gets or sets the message text paragraph margin.
+            </summary>
+            <value>
+            The message text paragraph margin.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleTheme.WelcomeMessageColor">
+            <summary>
+            Gets or sets the color of the welcome message.
+            </summary>
+            <value>
+            The color of the welcome message.
+            </value>
+        </member>
+        <member name="T:WPFCommandPrompt.StyleThemeManager">
+            <summary>
+            Manages the console window style themes.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.StyleThemeManager"/> class.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.StyleThemeManager"/> class.
+            </summary>
+            <param name="styleThemeIndex">Index of the style theme.</param>
+            <param name="loadStyleThemes">if set to <c>true</c> [load style themes].</param>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.StyleThemeIndexID">
+            <summary>
+            Gets the style theme index ID.
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.StyleThemeName">
+            <summary>
+            Gets the name of the style theme.
+            </summary>
+            <value>
+            The name of the style theme.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptBackgroundColor">
+            <summary>
+            Gets or sets the color of the command background.
+            </summary>
+            <value>
+            The color of the command background.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptBorderColor">
+            <summary>
+            Gets or sets the color of the command prompt border.
+            </summary>
+            <value>
+            The color of the command prompt border.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptBorderThickness">
+            <summary>
+            Gets or sets the command prompt border thickness.
+            </summary>
+            <value>
+            The command prompt border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptPadding">
+            <summary>
+            Gets or sets the command prompt padding.
+            </summary>
+            <value>
+            The command prompt padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptTextColor">
+            <summary>
+            Gets or sets the color of the command text.
+            </summary>
+            <value>
+            The color of the command text.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptFont">
+            <summary>
+            Gets or sets the command prompt font.
+            </summary>
+            <value>
+            The command text font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.CommandPromptFontSize">
+            <summary>
+            Gets or sets the size of the command text font.
+            </summary>
+            <value>
+            The size of the command text font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaFont">
+            <summary>
+            Gets or sets the message area font.
+            </summary>
+            <value>
+            The message area font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaFontSize">
+            <summary>
+            Gets or sets the size of the message area font.
+            </summary>
+            <value>
+            The size of the message area font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaBackgroundColor">
+            <summary>
+            Gets or sets the color of the message background.
+            </summary>
+            <value>
+            The color of the message background.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaBorderColor">
+            <summary>
+            Gets or sets the color of the message area border.
+            </summary>
+            <value>
+            The color of the message area border.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaBorderThickness">
+            <summary>
+            Gets or sets the message area border thickness.
+            </summary>
+            <value>
+            The message area border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageAreaPadding">
+            <summary>
+            Gets or sets the message area padding.
+            </summary>
+            <value>
+            The message area padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessagePromptColor">
+            <summary>
+            Gets or sets the color of the message prompt.
+            </summary>
+            <value>
+            The color of the message prompt.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageTextColor">
+            <summary>
+            Gets or sets the color of the message text.
+            </summary>
+            <value>
+            The color of the message text.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.MessageTextParagraphMargin">
+            <summary>
+            Gets or sets the message text paragraph margin.
+            </summary>
+            <value>
+            The message text paragraph margin.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.StyleThemeManager.WelcomeMessageColor">
+            <summary>
+            Gets or sets the color of the welcome message.
+            </summary>
+            <value>
+            The color of the welcome message.
+            </value>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.Count">
+            <summary>
+            The number of style themes in the list.
+            </summary>
+            <returns>Total count of style themes as an integer</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.AddStyleTheme(WPFCommandPrompt.StyleTheme)">
+            <summary>
+            Adds a color scheme to the list.
+            </summary>
+            <param name="styleTheme">The color scheme.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.CurrentThemeToNew">
+            <summary>
+            Adds the current style theme and any changes as a new theme. Not saved to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.CurrentStyleTheme">
+            <summary>
+            Gets the Current style theme description.
+            </summary>
+            <returns>Description of the current style theme as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.DeleteStyleTheme(System.Int32)">
+            <summary>
+            Deletes a style theme from the list.
+            </summary>
+            <param name="styleThemeIndex">Index of the style theme.</param>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the value is outside of the list index range.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.GetStyleTheme(System.Int32)">
+            <summary>
+            Gets the style theme by list index number.
+            </summary>
+            <param name="styleThemeIndex">The list index.</param>
+            <returns>StyleTheme</returns>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the value is outside of the list index range.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.GetStyleThemeList">
+            <summary>
+            Gets the style theme list.
+            </summary>
+            <returns>Style theme list as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.ResetStyleTheme">
+            <summary>
+            Resets the console theme. Any changes are discarded.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.SetStyleTheme(System.Int32)">
+            <summary>
+            Sets the active style theme.
+            </summary>
+            <param name="styleThemeIndex">The index of the style theme.</param>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the value is outside of the list index range.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.UpdateStyleTheme">
+            <summary>
+            Updates the original theme with the current settings. Does not save to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.LoadStyleThemes">
+            <summary>
+            Loads the style themes.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.StyleThemeManager.SaveStyleThemes">
+            <summary>
+            Saves the style themes.
+            </summary>
+        </member>
+        <member name="T:WPFCommandPrompt.CommandHistory">
+            <summary>
+            Manages the command history.
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.CommandHistory.Count">
+            <summary>
+            Gets the total number of commands in the history.
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.CommandHistory.CurrentCommand">
+            <summary>
+            Gets or sets the current command.
+            </summary>
+            <value>
+            The current command.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.CommandHistory.CommandHistoryList">
+            <summary>
+            Gets the command history list.
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.CommandHistory.CurrentIndex">
+            <summary>
+            Gets or sets the current command history index.
+            </summary>
+            <value>
+            The current index.
+            </value>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.AddCommandToHistory(System.String)">
+            <summary>
+            Adds to history. Skips empty commands.
+            </summary>
+            <param name="command">The command to add.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.ClearHistory">
+            <summary>
+            Clears the command history.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.GetCommand">
+            <summary>
+            Gets the next or previous command in the que.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.GetCommand(System.Int32)">
+            <summary>
+            Gets the command at the selected index number.
+            </summary>
+            <param name="indexNumber">The index number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.GetPrevious">
+            <summary>
+            Gets the previous command.
+            </summary>
+            <returns>The previous command.</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.GetNext">
+            <summary>
+            Gets the next command.
+            </summary>
+            <returns>The next command.</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.RemoveFromCommandHistory(System.Int32)">
+            <summary>
+            Removes a command from the command history.
+            </summary>
+            <param name="indexNumber">The index number of the command to remove.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.LoadCommandHistory(System.String,System.String)">
+            <summary>
+            Loads the command history from an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.CommandHistory.SaveCommandHistory(System.String,System.String)">
+            <summary>
+            Saves the command history to an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="T:WPFCommandPrompt.ConsoleSettingsManager">
+            <summary>
+            Manages the loading/saving of console settings.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleSettingsManager.LoadDefaults">
+            <summary>
+            Loads the default settings.
+            </summary>
+            <returns>Console Settings object with defaults</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleSettingsManager.LoadSettings(System.String,System.String)">
+            <summary>
+            Reads the settings from disk.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Console Settings object</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleSettingsManager.SetDefaults">
+            <summary>
+            Sets the default console setting.
+            </summary>
+            <returns>ConsoleSettings object with defaults</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleSettingsManager.SaveSettings(System.String,System.String,WPFCommandPrompt.ConsoleSettings)">
+            <summary>
+            Writes the settings to disk.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="consoleSettings">The console settings</param>
+        </member>
+        <member name="T:WPFCommandPrompt.WPFPrompt">
+            <summary>
+            Public interface for the console window.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.WPFPrompt"/> class with defaults.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.WPFPrompt"/> class.
+            </summary>
+            <param name="styleThemeIndex">The index number of the style theme to use.</param>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.AllowEmptyCommand">
+            <summary>
+            Allow an empty command to be written to the message area.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+              <c>true</c> if an empty command is processed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.ConsoleTitle">
+            <summary>
+            Gets or sets the window title.
+            Default: WPF Command Prompt VX.x.x
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The window title.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.ConsoleVersion">
+            <summary>
+            Gets the console assembly version.
+            Can also use Utility.AssemblyVersion()
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.DefaultConsoleHeight">
+            <summary>
+            Gets or sets the default height of the console.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The default height of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.DefaultConsoleWidth">
+            <summary>
+            Gets or sets the default width of the console.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The default width of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.DefaultPrompt">
+            <summary>
+            Gets or sets the default prompt (Default: '>').
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The default prompt.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.Delimiters">
+            <summary>
+            Gets or sets the regular expression string delimiter value.
+            Default: ((""((?&lt;token&gt;.*?)"")|(?&lt;token&gt;[\w]+))(\s)*)
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Regular expression string.
+            </value>
+            <exception cref="T:System.ArgumentException">Thrown when a supplied value is null or empty.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.EnableCommandHistory">
+            <summary>
+            Gets or sets a value indicating whether to allow the command history function (Default: true).
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Allow command history if <c>true</c> ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.EnableLoadStyleThemes">
+            <summary>
+            Should the StyleThemeManager() attempt to load saved style themes upon console creation or reset.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+              <c>true</c> if [load style themes]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.ManualCommandHistory">
+            <summary>
+            Is the command history managed by the console or by the user.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            	<c>true</c> if [manual command history]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MaxConsoleHeight">
+            <summary>
+            Gets or sets the maximum allowed console height (Default: 0.00). if '0', no maximum.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Maximum console height.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MaxConsoleWidth">
+            <summary>
+            Gets or sets the maximum allowed console width (Default: 0.00). if '0', no maximum.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Maximum console width.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MaxFontSize">
+            <summary>
+            Gets or Sets the maximum allowed font size of the console.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is over max size.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MinConsoleHeight">
+            <summary>
+            Gets or sets the minimum allowed console height (Default: 400.00).
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Minimum console height.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when height value is below zero.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MinConsoleWidth">
+            <summary>
+            Gets or sets the minimum allowed console width (Default: 600.00).
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            Minimum console width.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when width value is below zero.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MinFontSize">
+            <summary>
+            Gets or sets the minimum allowed font size of the console.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is below min size.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.Prompt">
+            <summary>
+            Gets or sets the prompt string (Default: '>').
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The command prompt string.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.StyleThemeIndex">
+            <summary>
+            Gets or sets the default style theme index number.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The style theme index number.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.WelcomeMessage">
+            <summary>
+            Gets or sets the welcome message.
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            The welcome message.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.UseInternalCommandParsing">
+            <summary>
+            Gets or sets a value indicating whether the console parses 
+            commands to an array or returns a single string[0] of unparsed commands.
+            Default: true. If false, access the string with an index of 0. 
+            Memeber of the ConsoleSettings() class object.
+            </summary>
+            <value>
+            <c>true</c> if [use internal command parsing]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptFont">
+            <summary>
+            Gets or sets the command prommpt font. Style theme property.
+            </summary>
+            <value>
+            The command text font.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptTextColor">
+            <summary>
+            Gets or sets the color of the command prompt text. Style theme property.
+            </summary>
+            <value>
+            The color of the command area text.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptFontSize">
+            <summary>
+            Gets or sets the size of the command prompt font. Style theme property.
+            </summary>
+            <value>
+            The size of the command text font.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is outside of min-max range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageAreaFont">
+            <summary>
+            Gets or sets the message area font. Style theme property.
+            </summary>
+            <value>
+            The message area font.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageAreaFontSize">
+            <summary>
+            Gets or sets the size of the message area font. Style theme property.
+            </summary>
+            <value>
+            The size of the message area font.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is outside of min-max range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessagePromptColor">
+            <summary>
+            Gets or sets the color of the message area prompt. Style theme property.
+            </summary>
+            <value>
+            The color of the message area prompt.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageTextColor">
+            <summary>
+            Gets or sets the color of the message text. Style theme property.
+            </summary>
+            <value>
+            The color of the message text.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.WelcomeMessageColor">
+            <summary>
+            Gets or sets the color of the welcome message. Style theme property.
+            </summary>
+            <value>
+            The color of the welcome message.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptBackgroundColor">
+            <summary>
+            Gets or sets the color of the command area background. Style theme property.
+            </summary>
+            <value>
+            The color of the command area background.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageBackgroundColor">
+            <summary>
+            Gets or sets the color of the message area background. Style theme property.
+            </summary>
+            <value>
+            The color of the message area background.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptBorderColor">
+            <summary>
+            Gets or sets the color of the command prompt border. Style theme property.
+            </summary>
+            <value>
+            The color of the command prompt border.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptBorderThickness">
+            <summary>
+            Gets or sets the command border thickness. Style theme property.
+            </summary>
+            <value>
+            The command border thickness.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.CommandPromptPadding">
+            <summary>
+            Gets or sets the command prompt padding. Style theme property.
+            </summary>
+            <value>
+            The command padding.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageAreaBorderColor">
+            <summary>
+            Gets or sets the color of the message area border. Style theme property.
+            </summary>
+            <value>
+            The color of the message area border.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageAreaBorderThickness">
+            <summary>
+            Gets or sets the message area border thickness. Style theme property.
+            </summary>
+            <value>
+            The message area border thickness.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageAreaPadding">
+            <summary>
+            Gets or sets the message area padding. Style theme property.
+            </summary>
+            <value>
+            The message area padding.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.MessageTextParagraphMargin">
+            <summary>
+            Gets or sets the message text paragraph margins. Style theme property.
+            </summary>
+            <value>
+            The message text paragraph margin.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.AddStyleTheme(WPFCommandPrompt.StyleTheme)">
+            <summary>
+            Adds a style theme to the theme list.
+            </summary>
+            <param name="styleTheme">The color scheme to add.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.CurrentThemeName(System.String)">
+            <summary>
+            Changes the name of the current style theme.
+            </summary>
+            <param name="themeName">Name of the theme.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.CurrentThemeToNew">
+            <summary>
+            Adds the current style theme and any changes as a new theme. Not saved to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.CurrentStyleThemeDetails">
+            <summary>
+            Gets the the description of the current style theme.
+            </summary>
+            <returns>Description of the current color scheme as a string</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.DeleteStyleTheme(System.Int32)">
+            <summary>
+            Deletes a style theme from the list, not from disk.
+            </summary>
+            <param name="styleThemeIndex">Index of the style theme.</param>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the value is outside of the list index range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.GetStyleThemeList">
+            <summary>
+            Gets a listing of the style themes.
+            </summary>
+            <returns>A String list of the color schemes</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadStyleThemes">
+            <summary>
+            Loads the style themes from disk.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ResetStyleTheme">
+            <summary>
+            Resets the console theme. Any changes are discarded.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveStyleThemes">
+            <summary>
+            Saves the style themes to disk.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SetStyleTheme(System.Int32)">
+            <summary>
+            Sets the style theme.
+            </summary>
+            <param name="styleThemeIndex">The index of the color scheme.</param>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the value is outside of the list index range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.UpdateStyleTheme">
+            <summary>
+            Updates the origional style theme with the current changes. Does not save to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.AddToCommandHistory(System.String)">
+            <summary>
+            Manually adds a command string to the command history.
+            </summary>
+            <param name="command">The command to add.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ClearCommandHistory">
+            <summary>
+            Clears the command history.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.GetCommand(System.Int32)">
+            <summary>
+            Gets the command at the selected index number.
+            </summary>
+            <param name="indexNumber">The index number.</param>
+            <returns>string</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.GetNextCommand">
+            <summary>
+            Gets the next command.
+            </summary>
+            <returns>The next command in the command history as a string.</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.GetPreviousCommand">
+            <summary>
+            Gets the previous command.
+            </summary>
+            <returns>The previous command in the command history as a string.</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadCommandHistory">
+            <summary>
+            Loads the command history from an xml file using the default directory file name.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadCommandHistory(System.String)">
+            <summary>
+            Loads the command history from an xml file in the current directory with
+            the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadCommandHistory(System.String,System.String)">
+            <summary>
+            Loads the command history from an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.RemoveFromCommandHistory(System.Int32)">
+            <summary>
+            Removes a command from the command history.
+            </summary>
+            <param name="indexNumber">The index number of the command to remove.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ResetCommandHistory">
+            <summary>
+            Resets the command history.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveCommandHistory">
+            <summary>
+            Saves the command history to the default path and file.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveCommandHistory(System.String)">
+            <summary>
+            Saves the command history to an xml file in the current directory with
+            the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveCommandHistory(System.String,System.String)">
+            <summary>
+            Saves the command history to an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ClearConsole">
+            <summary>
+            Clears the console of all content.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.Close">
+            <summary>
+            Closes the current console window instance.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.ConsoleHeight">
+            <summary>
+            Gets or sets the height of the console.
+            </summary>
+            <value>
+            The height of the console.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when window height is outside of min-max range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.WPFPrompt.ConsoleWidth">
+            <summary>
+            Gets or sets the width of the console.
+            </summary>
+            <value>
+            The width of the console.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when window width is outside of min-max range.</exception>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.Hide">
+            <summary>
+            Hides the console window.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ResetConsole">
+            <summary>
+            Resets the console to default settings.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ResetConsoleSize">
+            <summary>
+            Resets the size of the console to default.
+            </summary>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.Show">
+            <summary>
+            Shows the console window.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadSettings">
+            <summary>
+            Loads the settings from the default path and file.
+            Uses defaults if configuration file does not exist.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadSettings(System.String)">
+            <summary>
+            Loads the settings from the default path and specified file name.
+            Uses defaults if configuration file does not exist.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.LoadSettings(System.String,System.String)">
+            <summary>
+            Loads the settings from a specified path and file name.
+            Uses defaults if configuration file does not exist.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveSettings">
+            <summary>
+            Saves the settings to the default path and file.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveSettings(System.String)">
+            <summary>
+            Saves the settings to the default path and specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.SaveSettings(System.String,System.String)">
+            <summary>
+            Saves the settings to a specified path and file name.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.WriteLine(System.String)">
+            <summary>
+            Sends a string to the console output.
+            </summary>
+            <param name="output">String to output to console.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.WriteLine(System.String,System.Windows.Media.Brush)">
+            <summary>
+            Sends a string to the console output with the desired font color.
+            </summary>
+            <param name="output">String to output to console.</param>
+            <param name="foreground">The text color for text.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.WriteLine(System.Windows.Documents.Paragraph)">
+            <summary>
+            Writes a FlowDocument paragraph to the console.
+            </summary>
+            <param name="paragraph">The paragraph to send to console.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.WriteLine(System.Object,WPFCommandPrompt.ConsoleWriteLineEventArgs)">
+            <summary>
+            Sends a ConsoleWriteLineEventArgs object to the console output.
+            </summary>
+            <param name="sender">The sending object.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> instance containing the event data.</param>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the message area text.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="E:WPFCommandPrompt.WPFPrompt.ConsoleWriteLine">
+            <summary>
+            Occurs when writing text to the console.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.OnConsoleWriteEvent(System.Object,WPFCommandPrompt.ConsoleWriteLineEventArgs)">
+            <summary>
+            Called when writing text to the console.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:WPFCommandPrompt.WPFPrompt.ReadLine">
+            <summary>
+            Occurs on a console read line update event.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.WPFPrompt.OnConsoleReadEvent(System.Object,WPFCommandPrompt.ConsoleReadLineEventArgs)">
+            <summary>
+            Called on a console read line upate event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleReadLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:WPFCommandPrompt.WriteLineEventHandler">
+            <summary>
+            Delegate for the write Event Handler.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:WPFCommandPrompt.ConsoleWriteLineEventArgs">
+            <summary>
+            Event arguments for a console write event.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWriteLineEventArgs.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> class.
+            </summary>
+            <param name="message">Message to send to the console.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWriteLineEventArgs.#ctor(System.String,System.Windows.Media.Brush)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> class.
+            </summary>
+            <param name="message">>Message to send to the console.</param>
+            <param name="foreground">Text color (overrides default).</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWriteLineEventArgs.#ctor(System.Windows.Documents.Paragraph)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> class.
+            </summary>
+            <param name="paragraph">The paragraph to write to the console.</param>
+        </member>
+        <member name="F:WPFCommandPrompt.ConsoleWriteLineEventArgs.Paragraph">
+            <summary>
+            The flow document paragraph to write to the console.
+            </summary>
+        </member>
+        <member name="F:WPFCommandPrompt.ConsoleWriteLineEventArgs.Foreground">
+            <summary>
+            Text color.
+            </summary>
+        </member>
+        <member name="F:WPFCommandPrompt.ConsoleWriteLineEventArgs.Message">
+            <summary>
+            Message string to/from the console.
+            </summary>
+        </member>
+        <member name="T:WPFCommandPrompt.ReadLineEventHandler">
+            <summary>
+            Delegate for the read Event Handler.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleReadLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:WPFCommandPrompt.ConsoleReadLineEventArgs">
+            <summary>
+            Event arguments for a console read event as a parsed array of
+            commands or a single unparsed string of commands.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleReadLineEventArgs.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleReadLineEventArgs"/> class.
+            </summary>
+            <param name="commands">The parsed commands as an array.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleReadLineEventArgs.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleReadLineEventArgs"/> class.
+            </summary>
+            <param name="commandString">The un-parsed command string.</param>
+        </member>
+        <member name="F:WPFCommandPrompt.ConsoleReadLineEventArgs.Commands">
+            <summary>
+            Parsed string array of commands
+            </summary>
+        </member>
+        <member name="F:WPFCommandPrompt.ConsoleReadLineEventArgs.CommandString">
+            <summary>
+            Un-parsed command string.
+            </summary>
+        </member>
+        <member name="T:WPFCommandPrompt.ConsoleWindow">
+            <summary>
+            Interaction logic for ConsoleWindow.cs
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.#ctor(WPFCommandPrompt.ConsoleSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WPFCommandPrompt.ConsoleWindow"/> class.
+            </summary>
+            <param name="consoleSettings">The console settings.</param>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.ConsoleTitle">
+            <summary>
+            Gets or sets the window title.
+            </summary>
+            <value>
+            The window title.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.EnableCommandHistory">
+            <summary>
+            Gets or sets a value indicating whether to allow the command history function (Default: true).
+            </summary>
+            <value>
+            Allow command history if <c>true</c> ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.Prompt">
+            <summary>
+            Gets or sets the prompt string (Default: '>').
+            </summary>
+            <value>
+            The command prompt string.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.ConsoleHeight">
+            <summary>
+            Gets or sets the height of the console (Default: 400.00).
+            </summary>
+            <value>
+            The height of the console.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when window height is outside of min-max range.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.ConsoleWidth">
+            <summary>
+            Gets or sets the width of the console (Default: 600.00).
+            </summary>
+            <value>
+            The width of the console.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when window width is outside of min-max range.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptFont">
+            <summary>
+            Gets or sets the command prompt font.
+            </summary>
+            <value>
+            The command text font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptFontSize">
+            <summary>
+            Gets or sets the size of the command prompt font.
+            </summary>
+            <value>
+            The size of the command text font.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is outside of min-max range.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptTextColor">
+            <summary>
+            Gets or sets the color of the command prompt text.
+            </summary>
+            <value>
+            The color of the command area text.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaFont">
+            <summary>
+            Gets or sets the message area font.
+            </summary>
+            <value>
+            The message area font.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaFontSize">
+            <summary>
+            Gets or sets the size of the message area font.
+            </summary>
+            <value>
+            The size of the message area font.
+            </value>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when font size is outside of min-max range.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessagePromptColor">
+            <summary>
+            Gets or sets the color of the message area prompt.
+            </summary>
+            <value>
+            The color of the message area prompt.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageTextColor">
+            <summary>
+            Gets or sets the color of the message text.
+            </summary>
+            <value>
+            The color of the message text.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.WelcomeMessageColor">
+            <summary>
+            Gets or sets the color of the welcome message.
+            </summary>
+            <value>
+            The color of the welcome message.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptBackgroundColor">
+            <summary>
+            Gets or sets the color of the command area background.
+            </summary>
+            <value>
+            The color of the command area background.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaBackgroundColor">
+            <summary>
+            Gets or sets the color of the message area background.
+            </summary>
+            <value>
+            The color of the message area background.
+            </value>
+            <exception cref="T:System.FormatException">Thrown when value supplied is null or not a supported color or format.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptBorderColor">
+            <summary>
+            Gets or sets the color of the command prompt border.
+            </summary>
+            <value>
+            The color of the command prompt border.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptBorderThickness">
+            <summary>
+            Gets or sets the command border thickness.
+            </summary>
+            <value>
+            The command border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.CommandPromptPadding">
+            <summary>
+            Gets or sets the command padding.
+            </summary>
+            <value>
+            The command padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaBorderColor">
+            <summary>
+            Gets or sets the color of the message area border.
+            </summary>
+            <value>
+            The color of the message area border.
+            </value>
+            <exception cref="T:System.NullReferenceException">Thrown when class ConsoleWindow() has not been instantiated.</exception>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaBorderThickness">
+            <summary>
+            Gets or sets the message border thickness.
+            </summary>
+            <value>
+            The message border thickness.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageAreaPadding">
+            <summary>
+            Gets or sets the message padding.
+            </summary>
+            <value>
+            The message padding.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleWindow.MessageTextParagraphMargin">
+            <summary>
+            Gets or sets the message text paragraph margins.
+            </summary>
+            <value>
+            The message text paragraph margin.
+            </value>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.InitializeWindow(WPFCommandPrompt.ConsoleSettings)">
+            <summary>
+            Initializes the console window.
+            </summary>
+            <param name="consoleSettings">The console settings.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.InitializeConsole(WPFCommandPrompt.ConsoleSettings)">
+            <summary>
+            Initializes the console.
+            </summary>
+            <param name="consoleSettings">The console settings.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.AddStyleTheme(WPFCommandPrompt.StyleTheme)">
+            <summary>
+            Adds a color scheme to the list.
+            </summary>
+            <param name="styleTheme">The color scheme to add.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.CurrentThemeName(System.String)">
+            <summary>
+            Changes the name of the current theme. Only updates the current copy of the theme in use.
+            </summary>
+            <param name="themeName">Name of the theme.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.CurrentThemeToNew">
+            <summary>
+            Creates a new style theme with the current settings. Not saved to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.CurrentStyleThemeDetails">
+            <summary>
+            Gets the Current color scheme details.
+            </summary>
+            <returns>Description of the current color scheme as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.DeleteStyleTheme(System.Int32)">
+            <summary>
+            Deletes a style theme.
+            </summary>
+            <param name="styleThemeIndex">Index of the style theme.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.GetStyleThemeList">
+            <summary>
+            Gets the color scheme list.
+            </summary>
+            <returns>A list of the color schemes as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.LoadStyleThemes">
+            <summary>
+            Loads the style themes from disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ResetStyleTheme">
+            <summary>
+            Resets the console theme. Any changes are discarded.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.SaveStyleThemes">
+            <summary>
+            Saves the style themes to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.SetStyleTheme(System.Int32)">
+            <summary>
+            Sets the color scheme.
+            </summary>
+            <param name="styleThemeIndex">The list index of the style theme.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.SetTheme">
+            <summary>
+            Sets the color scheme for the console.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.UpdateStyleTheme">
+            <summary>
+            Updates the original style theme with the current settings. Does not save to disk.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.AddToCommandHistory(System.String)">
+            <summary>
+            Adds a command string to the command history.
+            </summary>
+            <param name="command">The command to add.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ClearCommandHistory">
+            <summary>
+            Clears the command history.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.GetCommand(System.Int32)">
+            <summary>
+            Gets the command at the selected index number.
+            </summary>
+            <param name="indexNumber">The index number.</param>
+            <returns>The command as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.GetNextCommand">
+            <summary>
+            Gets the next command.
+            </summary>
+            <returns>The next command as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.GetPreviousCommand">
+            <summary>
+            Gets the previous command.
+            </summary>
+            <returns>The previous command as a string</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.LoadCommandHistory(System.String,System.String)">
+            <summary>
+            Loads the command history from an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.RemoveFromCommandHistory(System.Int32)">
+            <summary>
+            Removes a command from the command history.
+            </summary>
+            <param name="indexNumber">The index number of the command to remove.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ResetCommandHistory">
+            <summary>
+            Resets the command history.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.SaveCommandHistory(System.String,System.String)">
+            <summary>
+            Saves the command history to an xml file.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ClearConsole">
+            <summary>
+            Clears the console of all content.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.CloseConsole">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.HideConsole">
+            <summary>
+            Hides the console window.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ResetConsole(WPFCommandPrompt.ConsoleSettings)">
+            <summary>
+            Resets the console window and all elements to default settings.
+            </summary>
+            <param name="consoleSettings">The console settings object.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ResetConsoleSize">
+            <summary>
+            Resets the size of the console to default.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ShowConsole">
+            <summary>
+            Shows the console.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the message area text.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.ParseCommands(System.String)">
+            <summary>
+            Parses commands from the command text area.
+            </summary>
+            <param name="input">The input.</param>
+            <returns>String array of parsed commands</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.WriteLine(System.Object,WPFCommandPrompt.ConsoleWriteLineEventArgs)">
+            <summary>
+            Sends a string to the console output.
+            </summary>
+            <param name="sender">The sending object.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleWriteLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.WriteLineToConsole(System.String,System.Windows.Media.Brush)">
+            <summary>
+            Sends a string to the console output with the desired font color.
+            </summary>
+            <param name="output">The output.</param>
+            <param name="foreground">The foreground.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.WriteLineToConsole(System.Windows.Documents.Paragraph)">
+            <summary>
+            Writes a FlowDocument paragraph to the console.
+            </summary>
+            <param name="paragraph">The paragraph.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.SendToMessagePrompt(System.String)">
+            <summary>
+            Sends a string to the console window. Internal only.
+            </summary>
+            <param name="output">The string to output.</param>
+        </member>
+        <member name="E:WPFCommandPrompt.ConsoleWindow.ConsoleReadLine">
+            <summary>
+            Occurs on a console read line update event.
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.ConsoleWindow.OnConsoleReadEvent(System.Object,WPFCommandPrompt.ConsoleReadLineEventArgs)">
+            <summary>
+            Called on a console read line update event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:WPFCommandPrompt.ConsoleReadLineEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:WPFCommandPrompt.ConsoleSettings">
+            <summary>
+            Holds a reference to the current console settings.
+            </summary>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.AllowEmptyCommand">
+            <summary>
+            Should the console show an empty command in the message prompt.
+            </summary>
+            <value>
+              <c>true</c> if [allow empty command]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.ConsoleTitle">
+            <summary>
+            Gets or sets the console window title.
+            </summary>
+            <value>
+            The console title.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.DefaultConsoleHeight">
+            <summary>
+            Gets or sets the default height of the console.
+            </summary>
+            <value>
+            The default height of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.DefaultConsoleWidth">
+            <summary>
+            Gets or sets the default width of the console.
+            </summary>
+            <value>
+            The default width of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.DefaultFontSize">
+            <summary>
+            Gets or sets the default font size.
+            </summary>
+            <value>
+            The default font size.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.DefaultPrompt">
+            <summary>
+            Gets or sets the default prompt.
+            </summary>
+            <value>
+            The default prompt.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.Delimiters">
+            <summary>
+            Gets or sets the delimiter string.
+            </summary>
+            <value>
+            The delimiter string.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.EnableCommandHistory">
+            <summary>
+            Gets or sets a value indicating whether to enable command history.
+            </summary>
+            <value>
+            	<c>true</c> if [enable command history]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.EnableLoadStyleThemes">
+            <summary>
+            Should the console try and load sytle themes from disk upon startup.
+            </summary>
+            <value>
+            	<c>true</c> if [enable load style themes]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.ManualCommandHistory">
+            <summary>
+            Is the command history managed by the console or by the user.
+            </summary>
+            <value>
+            	<c>true</c> if [manual command history]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MaxConsoleHeight">
+            <summary>
+            Gets or sets the maximum height of the console.
+            </summary>
+            <value>
+            The maximum height of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MaxConsoleWidth">
+            <summary>
+            Gets or sets the maximum width of the console.
+            </summary>
+            <value>
+            The maximum width of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MaxFontSize">
+            <summary>
+            Gets or sets the maximum font size.
+            </summary>
+            <value>
+            The maximum font size.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MinConsoleHeight">
+            <summary>
+            Gets or sets the minumum height of the console.
+            </summary>
+            <value>
+            The minumum height of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MinConsoleWidth">
+            <summary>
+            Gets or sets the minumum width of the console.
+            </summary>
+            <value>
+            The minumum width of the console.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.MinFontSize">
+            <summary>
+            Gets or sets the minimum font size.
+            </summary>
+            <value>
+            The minimum font size.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.Prompt">
+            <summary>
+            Gets or sets the prompt.
+            </summary>
+            <value>
+            The prompt.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.StyleThemeIndex">
+            <summary>
+            Gets or sets the index of the style theme.
+            </summary>
+            <value>
+            The index of the style theme.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.UseInternalCommandParsing">
+            <summary>
+            Gets or sets a value indicating whether to use internal command parsing.
+            Otherwise commands must be parse by the user.
+            </summary>
+            <value>
+            	<c>true</c> if [use internal command parsing]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WPFCommandPrompt.ConsoleSettings.WelcomeMessage">
+            <summary>
+            Gets or sets the welcome message.
+            </summary>
+            <value>
+            The welcome message.
+            </value>
+        </member>
+        <member name="T:WPFCommandPrompt.Utility">
+            <summary>
+            Common utilities
+            </summary>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.AssemblyVersion(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Version of the current assembly.
+            </summary>
+            <param name="includeMinor">if set to <c>true</c> [include minor].</param>
+            <param name="includeBuild">if set to <c>true</c> [include build].</param>
+            <param name="includeRevision">if set to <c>true</c> [include revision].</param>
+            <returns>Assembly version as a string in Major.Minor.Build.Revision format.</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.StringToBrush(System.String)">
+            <summary>
+            Converts a string color value to a Brush.
+            </summary>
+            <param name="colorValue">The string value as a color name or a hex value</param>
+            <returns>Brush</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.StringToThickness(System.String)">
+            <summary>
+            Converts a string (e.g. "1,1,1,1") into a Thinkness object.
+            </summary>
+            <param name="thickness">The thickness as a string.</param>
+            <returns>Thickness</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.IsHexColor(System.String)">
+            <summary>
+            Determines if a string is a hex color value.
+            </summary>
+            <param name="hexValue">The hex value string.</param>
+            <returns>
+              <c>true</c> if the string is a hex color; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.XMLFileToObject``1(System.String)">
+            <summary>
+            Reads an xml file and converts it to its correct object type.
+            </summary>
+            <typeparam name="T">The object type</typeparam>
+            <param name="path">The path including the file name.</param>
+            <returns>Object of type T</returns>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.ObjectToXMlFile``1(System.String,``0)">
+            <summary>
+            Takes a serializable object and saves it to an xml file.
+            </summary>
+            <typeparam name="T">The object type</typeparam>
+            <param name="path">The path including the file name.</param>
+            <param name="obj">The object to serialize.</param>
+        </member>
+        <member name="M:WPFCommandPrompt.Utility.WriteTextToFile(System.String,System.String)">
+            <summary>
+            Writes text to a file.
+            </summary>
+            <param name="path">The path including the file name.</param>
+            <param name="text">The text to write.</param>
+        </member>
+    </members>
+</doc>

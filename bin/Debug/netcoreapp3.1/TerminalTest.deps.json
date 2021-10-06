@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TerminalTest/1.0.0": {
+        "dependencies": {
+          "WPFCommandPrompt": "1.0.0"
+        },
+        "runtime": {
+          "TerminalTest.dll": {}
+        }
+      },
+      "WPFCommandPrompt/1.0.0": {
+        "runtime": {
+          "WPFCommandPrompt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TerminalTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPFCommandPrompt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
